@@ -32,7 +32,7 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-/* Lock body scroll when mobile menu is open */
+/* Lock body scroll when mobile menu open */
 body.menu-open {
   overflow: hidden;
 }
@@ -241,24 +241,27 @@ footer {
   transform: scale(1.2);
 }
 
-
+/* ──────────────────────────────────────────────
+   MOBILE MENU FIX - FULL SCREEN + SCROLLABLE
+──────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .hamburger {
     display: flex;
   }
 
   .nav-links {
-    display: none; 
+    display: none;
     position: fixed;
-    inset: 0;
-    top: 80px; 
+    inset: 0 0 0 0; /* full screen */
+    top: 80px; /* below header */
     background: rgba(10, 10, 10, 0.98);
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: 2.5rem;
-    padding: 5rem 2rem 2rem;
-    overflow-y: auto; 
+    padding: 6rem 2rem 4rem; /* more top padding for breathing room */
+    overflow-y: auto; /* enables scrolling inside menu */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
     transform: translateY(-100%);
     transition: transform 0.4s ease;
     z-index: 999;
@@ -270,14 +273,14 @@ footer {
   }
 
   .nav-links a {
-    font-size: 1.4rem;
-    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid var(--border);
   }
 
-  
-  body.menu-open {
-    overflow: hidden;
+  .nav-links a:last-child {
+    border-bottom: none;
   }
 }
