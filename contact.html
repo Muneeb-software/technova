@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – TechNova</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">TechNova</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="blog.html">Blog</a>
+          <a href="news.html">News</a>
+          <a href="faq.html">FAQ</a>
+          <a href="team.html">Team</a>
+          <a href="signin.html">Sign In</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="theme-toggle">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding-top: 8rem;">
+      <div class="container" style="max-width: 700px;">
+        <h1 data-aos="fade-up" style="font-size: 4.2rem; text-align:center; margin-bottom: 1.5rem;">Get in Touch</h1>
+        <p data-aos="fade-up" data-aos-delay="100" style="text-align:center; font-size:1.3rem; margin-bottom: 4rem; opacity:0.9;">
+          Have a project in mind? Let's talk no fluff, just results.
+        </p>
+
+        <form data-aos="fade-up" data-aos-delay="200" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:1.2rem; margin:0.8rem 0; border-radius:8px; border:1px solid var(--border); background:var(--card); color:var(--text); font-size:1.1rem;">
+          <input type="email" name="email" placeholder="Email Address" required style="width:100%; padding:1.2rem; margin:0.8rem 0; border-radius:8px; border:1px solid var(--border); background:var(--card); color:var(--text); font-size:1.1rem;">
+          <textarea name="message" placeholder="Your Message" rows="7" required style="width:100%; padding:1.2rem; margin:0.8rem 0; border-radius:8px; border:1px solid var(--border); background:var(--card); color:var(--text); font-size:1.1rem;"></textarea>
+          <button type="submit" class="btn" style="margin-top:1.8rem; width:100%; font-size:1.3rem; padding:1.3rem;">Send Message</button>
+        </form>
+
+        <p style="text-align:center; margin-top:2rem; opacity:0.7;">We usually respond within 24 hours.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 TechNova. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+  <script src="script.js"></script>
+</body>
+</html>

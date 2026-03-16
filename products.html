@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products – TechNova</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">TechNova</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="blog.html">Blog</a>
+          <a href="news.html">News</a>
+          <a href="faq.html">FAQ</a>
+          <a href="team.html">Team</a>
+          <a href="signin.html">Sign In</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="theme-toggle">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-aos="fade-up">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Our Products</h1>
+          <p class="hero-subtitle">Ready to deploy tools and platforms engineered for performance, security, and ease of integration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid">
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-robot fa-icon" style="font-size:3.5rem; margin-bottom:1.5rem;"></i>
+            <h3>NovaRAG Engine</h3>
+            <p>Open source retrieval augmented generation framework  5× faster hybrid search.</p>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-shield-alt fa-icon" style="font-size:3.5rem; margin-bottom:1.5rem;"></i>
+            <h3>ZeroTrust Core</h3>
+            <p>Enterprise zero trust platform  mTLS, OPA policy engine, continuous monitoring.</p>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-cloud-upload-alt fa-icon" style="font-size:3.5rem; margin-bottom:1.5rem;"></i>
+            <h3>NovaCloud Toolkit</h3>
+            <p>One click Kubernetes deployment suite  Helm charts, monitoring dashboards, autoscaling.</p>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-code-branch fa-icon" style="font-size:3.5rem; margin-bottom:1.5rem;"></i>
+            <h3>EdgeFlow Runtime</h3>
+            <p>Serverless edge computing runtime  real time processing, low latency APIs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="margin-bottom: 2rem;">
+        <a href="https://x.com/keyani_302" class="fa-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/muneeb-iftikhar-cs/" class="fa-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Muneeb-software" class="fa-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      </div>
+      <p>© 2026 TechNova. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+  <script src="script.js"></script>
+</body>
+</html>

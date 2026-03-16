@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In – TechNova</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">TechNova</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="blog.html">Blog</a>
+          <a href="news.html">News</a>
+          <a href="faq.html">FAQ</a>
+          <a href="team.html">Team</a>
+          <a href="signin.html">Sign In</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="theme-toggle">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section style="min-height: 80vh; display: flex; align-items: center; justify-content: center; padding: 4rem 1rem;">
+      <div class="card" style="max-width: 420px; width: 100%;" data-aos="fade-up">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Sign In to TechNova</h2>
+        
+        <form>
+          <div style="margin-bottom: 1.5rem;">
+            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
+            <input type="email" id="email" placeholder="you@technova.com" required style="width: 100%; padding: 1rem; border: 1px solid var(--border); border-radius: 0.5rem; background: var(--card); color: var(--text); font-size: 1rem;">
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="password" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Password</label>
+            <input type="password" id="password" placeholder="••••••••" required style="width: 100%; padding: 1rem; border: 1px solid var(--border); border-radius: 0.5rem; background: var(--card); color: var(--text); font-size: 1rem;">
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; font-size: 0.95rem;">
+            <label style="display: flex; align-items: center; gap: 0.5rem;">
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" style="color: var(--accent);">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn" style="width: 100%; padding: 1rem; font-size: 1.1rem;">Sign In</button>
+        </form>
+
+        <p style="text-align: center; margin: 1.5rem 0; opacity: 0.8;">Or continue with</p>
+
+        <div style="display: flex; gap: 1rem; justify-content: center;">
+          <button style="flex: 1; padding: 0.8rem; background: #111; border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text); cursor: pointer;">
+            <i class="fab fa-google"></i> Google
+          </button>
+          <button style="flex: 1; padding: 0.8rem; background: #111; border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text); cursor: pointer;">
+            <i class="fab fa-github"></i> GitHub
+          </button>
+        </div>
+
+        <p style="text-align: center; margin-top: 2rem;">
+          Don't have an account? <a href="signup.html" style="color: var(--accent);">Sign Up</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="margin-bottom: 2rem;">
+        <a href="https://x.com/keyani_302" class="fa-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/muneeb-iftikhar-cs/" class="fa-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Muneeb-software" class="fa-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      </div>
+      <p>© 2026 TechNova. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+  <script src="script.js"></script>
+</body>
+</html>
